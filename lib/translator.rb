@@ -2,15 +2,15 @@
 def load_library (file)
   file = YAML.load_file("./lib/emoticons.yml")
    
-  new_hash = {
+  smiley_hash = {
    "get_meaning" => {},
    "get_emoticon" => {}
  }
  file.each do |meaning, translation|
    english = translation[0]
    japanese = translation[1]
-   new_hash["get_meaning"][japanese] = meaning
-   new_hash["get_emoticon"][english] = japanese
+   smiley_hash["get_meaning"][japanese] = meaning
+   smiley_hash["get_emoticon"][english] = japanese
  end
   return new_hash
 end
