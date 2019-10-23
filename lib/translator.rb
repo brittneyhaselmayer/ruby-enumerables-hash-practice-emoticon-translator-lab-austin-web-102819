@@ -28,7 +28,12 @@ end
 
 
 def get_english_meaning(file,emoticon)
-  load_library(file)
+ yy=load_library(file)
+  yy[get_meaning].each do |k,v|
+    if k == emoticon
+      return v
   
-  
+ end
+ end 
+ 
 end
