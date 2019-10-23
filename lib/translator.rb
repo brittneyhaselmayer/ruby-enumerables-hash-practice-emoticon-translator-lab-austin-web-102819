@@ -4,9 +4,9 @@ def load_library (file)
    
   smiley_hash = {  "get_meaning" => {}, "get_emoticon" => {} }
  
- file.each do |meaning, translation|
-   english = translation[0]
-   japanese = translation[1]
+ file.each do |meaning, smileys|
+   english = smileys[0]
+   japanese = smileys[1]
    smiley_hash["get_meaning"][japanese] = meaning
    smiley_hash["get_emoticon"][english] = japanese
  end
