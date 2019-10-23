@@ -20,7 +20,9 @@ def get_japanese_emoticon(file,emoticon)
   xx=load_library(file)
   xx["get_emoticon"].each do |k,v|
     if k == emoticon
-return v  
+     return v  
+else "Sorry, that emoticon is not available"
+
 end
 end
 end
