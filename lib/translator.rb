@@ -2,7 +2,7 @@
 def load_library (file)
   file = YAML.load_file("./lib/emoticons.yml")
    
-  smiley_hash = {  "get_meaning" => {}, "get_emoticon" => {} }
+  smiley_hash = {  "get_meaning": {}, "get_emoticon": {} }
  
  file.each do |meaning, smileys|
    english = smileys[0]
