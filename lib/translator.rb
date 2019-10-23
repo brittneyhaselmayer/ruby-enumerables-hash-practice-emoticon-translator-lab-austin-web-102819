@@ -12,7 +12,7 @@ def load_library (file)
    smiley_hash["get_meaning"][japanese] = meaning
    smiley_hash["get_emoticon"][english] = japanese
  end
-  return new_hash
+  return smiley_hash
 end
 
 
