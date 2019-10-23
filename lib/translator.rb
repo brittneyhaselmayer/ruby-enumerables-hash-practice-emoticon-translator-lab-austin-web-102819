@@ -20,7 +20,7 @@ def get_japanese_emoticon(file,emoticon)
   xx=load_library(file)
   xx["get_emoticon"].each do |k,v|
     if k == emoticon
-     v  
+    return  v  
   end
  end
 end
