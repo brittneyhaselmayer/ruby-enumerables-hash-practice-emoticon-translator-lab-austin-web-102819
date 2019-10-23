@@ -23,7 +23,7 @@ def get_japanese_emoticon(file,emoticon)
     return  v  
   end
  end
- return "Sorry, that emoticonwas not found"
+ return "Sorry, that emoticon was not found"
 end
 
 
